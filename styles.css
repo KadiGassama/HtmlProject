@@ -71,16 +71,32 @@ nav ul li {
 	content: "▼";
 	font-size: 12px;
 }
-.separation{
-	border-bottom: 2px solid rgba(0,0,0,.1);
-	display: inline-flex;
-	flex-direction: row;
-	height: 33vh;
-	width: 100%;
-	margin: 0px;
-}
+
 .moto125{
+	display:block;
+	border-bottom: 2px solid rgba(0,0,0,.1);
 	height: 100%;
-	border-right:2px solid black;
-	width: 35%;
+	margin: auto; 	}
+
+.global{
+	width:100%;
+	display: inline-flex;
+}
+.gauche{
+	float:left;
+	width: 33%;
+	border-right: 2px solid rgba(0,0,0,.1);
+}
+.droite{
+	float: right;
+	width:100%;
+}
+.image{
+	height: 33vh;
+	border-bottom: 2px solid black;
+	
+}
+.paramoto{
+	height: 33vh;
+	border-bottom: 2px solid black;
 }
