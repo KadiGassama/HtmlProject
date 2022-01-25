@@ -7,6 +7,9 @@ body, html{
 	height:100%;
 }
 
+header{
+	height: 80px;
+}
 
 body{
 	text-align:center;	
@@ -39,6 +42,11 @@ nav{
 	background-color: red;
 	
 }
+.conteneur-nav{
+	position: static;
+	width: 100%;
+	height: 100%;
+}
 nav a{
 	display: block;
 	text-decoration: none;
@@ -49,12 +57,19 @@ nav a{
 
 nav a:hover{
 	color:white;
-	border-bottom: 2px solid black;
+
 }
-nav >ul{
-	list-style-type: none;
+#ulnav{
+	height: 100%;
+}
+nav ul{
 	display: flex;
-	justify-content: center;
+	flex-flow: row ;
+	background-color: red;
+	align-items:center;
+	
+	width: 100%;
+	list-style-type: none;
 }
 
 nav li{
@@ -63,30 +78,29 @@ nav li{
 	text-align: center;
 
 }
+
 nav ul li {
+		flex:1 1 auto;
+	text-align: center;
+	position:relative;
+
+}
+.somenu{
 	float:left;
 	width:22%;
 	text-align: center;
 	position:relative;
-	display: flex;
 	align-items: center;
 	display: block;
-}
-.somenu{
-		float:left;
-	width:22%;
-	text-align: center;
-	position:relative;
-	
-	align-items: center;
 }
  nav ul::after{
  	content: "";
  	display: table;
  	clear: both;
  }
- nav > ul li:hover .sous{
- 	display:block;
+ nav >div > ul li:hover .sous{
+ 	display: flex;
+	flex-flow: column wrap;
  }
  .sous{
  	display: none;
@@ -95,27 +109,31 @@ nav ul li {
  	position: absolute;
 
  	width: 100%;
- 	z-index:1000;
+ 	
  }
 .sous li{
-	float: none;
-	width: 100%;
+	flex:1 1 auto;
 	text-align: left;
+	background-color: rgba(200,200,200,.8);
+	width: 100%;
 }
 .sous a{
-	padding:10px;
 	border-bottom: none;
+	background-color: white;
 }
 .sous a:hover{
 	border-bottom: none;
 	background-color: rgba(0,0,200,0.1);
 }
+
 .deroulant>a::after{
 	content: "▼";
 	font-size: 12px;
 }
 
-
+#main{
+	height: 100%;
+}
 .moto125{
 	display:block;
 	border-bottom: 2px solid rgba(0,0,0,.1);
@@ -141,11 +159,16 @@ nav ul li {
 	
 }
 .paramoto{
-	height: 33vh;
+	height:33vh;
 	border-bottom: 2px solid black;
 }
-#logoMoto{
-	max-height:100%;
+
+#imageindex{
+	height: 50px;
+	width: 50px;
+	align-self: flex-start;
+	
+}
+#logomoto {
 	width: 100%;
-	float:left;
 }
