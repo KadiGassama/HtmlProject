@@ -172,3 +172,103 @@ nav ul li {
 #logomoto {
 	width: 100%;
 }
+#case125{
+	background-image: url("./images/fond'ecran.jpg");
+	background-position: top;
+
+
+}
+#case300{
+	background-image: url("./images/300-4.jpg");
+	background-position: top;
+}
+#case500{
+	background-image: url("./images/500-4.jpg");
+	background-position: top;
+}
+#case750{
+	background-image: url("./images/750-4.jpg");
+	background-position: top;
+	background-size: 100%;
+}
+#case1000{
+	background-image: url("./images/1000-4.jpeg");
+	background-position: center;
+	background-size: 80%;
+	 align-self: center;
+    flex: 1 1 20%;
+}
+.globalM{
+	display: flex;
+	
+	flex-flow: row wrap;
+}
+.caseM{
+	width: 50%;
+	height: 50vh;
+	text-align: center;
+	align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.lienM{
+	   color: rgb(238,232,170);
+	   text-decoration: none;
+	   font-size: 200%;
+	   width:100%;
+	   height: 100%;
+	   text-align: center;
+	       display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+#mot125{
+	color:black;
+}
+#mot300{
+	color:rgb(30,144,255);
+}
+.article{
+
+	text-align: left;
+   
+
+    
+    background-color: white;
+    color: black;
+   
+}
+img{
+	max-height: 100%;
+}
+.articleuni{
+	 padding-left: 10px;
+   
+	padding-right: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	height: 20vh;
+	 border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+.troistop{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#imgGp{
+	max-height: 70%;
+}
+.titre{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 5px solid black;
+	flex-direction: row;
+	height: 25vh;
+}
+.globalA{
+	height: auto;
+}
